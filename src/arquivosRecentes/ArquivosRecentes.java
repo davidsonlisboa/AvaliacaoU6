@@ -17,7 +17,12 @@ public void esvaziaLista() {
 }
 
 public void mudaEstado() {
-	Atualizacao = true;
+	if(Atualizacao == true) {
+		Atualizacao = false;
+	}
+	else {
+		Atualizacao = true;
+	}
 }
 
 public Boolean getEstado() {
