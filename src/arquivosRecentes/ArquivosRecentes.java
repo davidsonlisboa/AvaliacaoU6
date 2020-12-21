@@ -1,13 +1,24 @@
 package arquivosRecentes;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ArquivosRecentes {
 
-private boolean Atualizacao;
+private boolean att;
+private List lista;
+
+
+public ArquivosRecentes() {
+	att = false;
+	lista = new ArrayList <String> ();
+}
 	
-public void adicionaPrograma() {
+public void adicionaArquivo(String arq) {
 	
 }	
 
+//Nesse caso, o maximo sao 10 elementos na lista
 public void removeAntigo() {
 	
 }
@@ -17,18 +28,20 @@ public void esvaziaLista() {
 }
 
 public void mudaEstado() {
-	if(Atualizacao == true) {
-		Atualizacao = false;
+	if(att == true) {
+		att = false;
 	}
 	else {
-		Atualizacao = true;
+		att = true;
 	}
 }
 
 public Boolean getEstado() {
-	return Atualizacao;
+	return att;
 }
 
-
+public List getLista() {
+	return lista;
+}
 
 }
