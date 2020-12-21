@@ -15,7 +15,7 @@ public ArquivosRecentes() {
 }
 	
 public void adicionaArquivo(String arq) {
-	
+	lista.add(arq);
 }	
 
 //Nesse caso, o maximo sao 10 elementos na lista
