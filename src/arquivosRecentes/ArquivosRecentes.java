@@ -17,7 +17,7 @@ public void esvaziaLista() {
 }
 
 public void mudaEstado() {
-	
+	Atualizacao = true;
 }
 
 public Boolean getEstado() {
