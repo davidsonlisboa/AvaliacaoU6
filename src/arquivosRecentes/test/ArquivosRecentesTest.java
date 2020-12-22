@@ -35,6 +35,5 @@ public class ArquivosRecentesTest {
 		List lista = x.getLista();
 		assertTrue(lista.isEmpty());
 	}
-
-
+	
 }

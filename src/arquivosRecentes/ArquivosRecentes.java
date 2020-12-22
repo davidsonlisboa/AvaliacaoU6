@@ -30,7 +30,7 @@ public void removeAntigo() {
 }
 	
 public void esvaziaLista() {
-	
+	lista.remove(0);
 }
 
 public void mudaEstado() {
