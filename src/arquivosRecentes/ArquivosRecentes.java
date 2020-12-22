@@ -16,20 +16,18 @@ public ArquivosRecentes() {
 
 //Nesse caso, o maximo sao 10 elementos na lista
 public void adicionaArquivo(String arq) {
-	if(lista.contains(arq)) {
-		lista.remove(arq);
-		lista.add(0, arq);
-	}
-	else {
-		if(lista.size()==10){
-			lista.remove(9);
+	if(att) {
+		if(lista.contains(arq)) {
+			lista.remove(arq);
+			lista.add(0, arq);
 		}
-		lista.add(0,arq);
+		else {
+			if(lista.size()==10) {
+				lista.remove(9);
+			}
+			lista.add(0,arq);
+		}
 	}
-	if(!att) {
-		lista.remove(0);
-	}
-	
 }
 	
 public void esvaziaLista() {
