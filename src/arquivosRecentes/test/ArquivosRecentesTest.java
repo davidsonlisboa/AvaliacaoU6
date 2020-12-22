@@ -38,4 +38,12 @@ public class ArquivosRecentesTest {
 		assertTrue(lista.isEmpty());
 	}
 	
+	@Test
+	void LimiteDeArquivosTest() {
+		ArquivosRecentes x = new ArquivosRecentes();
+		for(int i=1;i<=11;i++) {
+			x.adicionaArquivo("arq"+i);
+		}
+		assertEquals(10,x.getLista().size());
+	}
 }

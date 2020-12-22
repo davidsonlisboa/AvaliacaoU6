@@ -13,7 +13,8 @@ public ArquivosRecentes() {
 	att = false;
 	lista = new ArrayList <String> ();
 }
-	
+
+//Nesse caso, o maximo sao 10 elementos na lista
 public void adicionaArquivo(String arq) {
 	if(lista.contains(arq)) {
 		lista.remove(arq);
@@ -22,11 +23,6 @@ public void adicionaArquivo(String arq) {
 	else {
 		lista.add(0,arq);
 	}
-}	
-
-//Nesse caso, o maximo sao 10 elementos na lista
-public void removeAntigo() {
-	
 }
 	
 public void esvaziaLista() {
