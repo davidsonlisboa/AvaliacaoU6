@@ -21,8 +21,12 @@ public void adicionaArquivo(String arq) {
 		lista.add(0, arq);
 	}
 	else {
+		if(lista.size()==10){
+			lista.remove(9);
+		}
 		lista.add(0,arq);
 	}
+	
 }
 	
 public void esvaziaLista() {
