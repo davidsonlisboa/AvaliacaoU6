@@ -31,6 +31,8 @@ public class ArquivosRecentesTest {
 		ArquivosRecentes x = new ArquivosRecentes();
 		String arq = "Arquivo teste";
 		x.adicionaArquivo(arq);
+		String arq2 = "Arquivo teste2";
+		x.adicionaArquivo(arq2);
 		x.esvaziaLista();
 		List lista = x.getLista();
 		assertTrue(lista.isEmpty());
