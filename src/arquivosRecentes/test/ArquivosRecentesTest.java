@@ -46,4 +46,15 @@ public class ArquivosRecentesTest {
 		}
 		assertEquals(10,x.getLista().size());
 	}
+	
+	@Test
+	void DesabilitaTest() {
+		ArquivosRecentes x = new ArquivosRecentes();
+		String arq = "Arquivo teste";
+		x.mudaEstado();
+		x.adicionaArquivo(arq);
+		List lista = x.getLista();
+		assertTrue(lista.isEmpty());
+	}
+	
 }

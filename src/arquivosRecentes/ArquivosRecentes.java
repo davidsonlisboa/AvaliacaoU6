@@ -10,7 +10,7 @@ private List lista;
 
 
 public ArquivosRecentes() {
-	att = false;
+	att = true;
 	lista = new ArrayList <String> ();
 }
 
