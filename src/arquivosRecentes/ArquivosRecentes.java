@@ -26,6 +26,9 @@ public void adicionaArquivo(String arq) {
 		}
 		lista.add(0,arq);
 	}
+	if(!att) {
+		lista.remove(0);
+	}
 	
 }
 	
