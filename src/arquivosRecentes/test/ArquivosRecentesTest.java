@@ -3,7 +3,6 @@ package arquivosRecentes.test;
 import org.junit.jupiter.api.Test;
 import arquivosRecentes.ArquivosRecentes;
 import static org.junit.jupiter.api.Assertions.*;
-
 import java.util.List;
 
 
@@ -25,6 +24,16 @@ public class ArquivosRecentesTest {
 		x.adicionaArquivo(arq01);
 		List lista = x.getLista();
 		assertTrue(lista.contains(arq01));
+	}
+	
+	@Test
+	void EsvaziaTest() {
+		ArquivosRecentes x = new ArquivosRecentes();
+		String arq = "Arquivo teste";
+		x.adicionaArquivo(arq);
+		x.esvaziaLista();
+		List lista = x.getLista();
+		assertTrue(lista.isEmpty());
 	}
 
 
